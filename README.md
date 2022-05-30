@@ -1,1 +1,1 @@
-# Survival Analysis in R Coursera Exercises
+# Survival Analysis in R
