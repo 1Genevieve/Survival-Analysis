@@ -43,9 +43,13 @@ survdiff(Surv(fu_time, death) ~ gender, rho=0)
 ![survdiff](https://github.com/1Genevieve/Survival_Analysis/blob/master/survdiff1.JPG)
 
 THe chi-squared test statistic measures the discrepancy between the observed data and the expected data under the null hypothesis. In the context of survival analysis, the chi-squared statistic compares the observed survival data among different groups. It provides a measure of the discrepancy between the observed survival data and the expected survival data under the null hypothesis
+
 **Null hypothesis** - the chi-squared test starts with a null hypothesis, which assumes that there is no difference between the groups being compared. In the case of survdiff, it assumes that the survival curves of the groups are identical.
+
 **Expected Data** - under the null hypothesis, the expected survival data is calculated based on the assumption of no difference between the groups. The expected data represents what would be observed if the null hypothesis is true.
+
 **Observed Data** - actual data collected or obtained from the study.
+
 **Interpretation** - the obtained chi-squared statistic is compared to a chi-squared distribution with a specific number of degrees of freedom. A higher chi-squared value indicates a larger difference between the groups, while a smaller value suggests a smaller difference or similarity. The degrees of freedom depend on the number of categories or groups being compared. The resulting p-value indicates the probability of obtaining a chi-squared statistic as extreme as the observed one, assuming the null hypothesis is true.
 
 The chi-squared statistic of 0.1 with 1 degree of freedom and a p-value of 0.8 indicates that the observed differences in the data are likely due to chance or random variation. There is weak evidence to suggest a significant difference between the groups being compared based on the chi-squared test results.
