@@ -11,6 +11,7 @@ For example:
 
 ```R
 km_fit <- survfit(Surv(fu_time, death) ~ 1)
+```
 
 Surv(fu_time, death) defines the survival object for the analysis. The Surv function is used to specify the time-to-event data, where fu_time represents the follow-up time and death represents the event indicator (1 if an event occurred, 0 if censored). ~ 1 is the formula specification for the survival analysis. Tilde (~) separates the response variable (Surv(fu_time, death)) from the explanatory variable. In this case, 1 indicates that there are no explanatory variables, meaning we are interested in estimating the overall survival curve without considering any specific grouping factors.
 
