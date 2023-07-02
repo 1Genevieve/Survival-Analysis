@@ -3,7 +3,13 @@
 ### Package: Survival
 ### Functions:
 
-#### 1. "survfit" - fits a simple survival model
+#### 1. "survfit" - fits a simple survival model. This is the function used to create survival curves in R based on the Kaplan-Meier estimator. It produces Kaplan-Meier survival curves for the given data.
+
+For example:
+
+km_fit <- survfit(Surv(fu_time, death) ~ 1)
+
+
 
 #### 2. "surv" - produces the KM estimates of the probability of survival over time
 
@@ -11,7 +17,11 @@
 
 For example:
 
+The survival curves of two groups based on gender are compared. 
+
 survdiff(Surv(fu_time, death) ~ gender, rho=0)
+
+
 
 ![survdiff](https://github.com/1Genevieve/Survival_Analysis/blob/master/survdiff1.JPG)
 
