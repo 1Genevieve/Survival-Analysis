@@ -54,4 +54,11 @@ THe chi-squared test statistic measures the discrepancy between the observed dat
 
 The chi-squared statistic of 0.1 with 1 degree of freedom and a p-value of 0.8 indicates that the observed differences in the data are likely due to chance or random variation. There is weak evidence to suggest a significant difference between the groups being compared based on the chi-squared test results.
 
+Plot of KM curves:
 
+```
+km_gender_fit <- survfit(Surv(fu_time, death) ~ gender)
+plot(km_gender_fit)
+```
+
+![km_gender](https://github.com/1Genevieve/Survival_Analysis/blob/master/kmfit_gender.JPG)
