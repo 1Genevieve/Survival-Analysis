@@ -13,4 +13,4 @@ For example:
 
 survdiff(Surv(fu_time, death) ~ gender, rho=0)
 
-![survdiff](url "Title")
+![survdiff](https://github.com/1Genevieve/Survival_Analysis/blob/master/survdiff1.JPG)
