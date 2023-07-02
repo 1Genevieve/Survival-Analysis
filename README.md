@@ -31,7 +31,7 @@ km_summary <- summary(km_fit)
 surv_prob <- km_summary$surv
 ```
 
-The resulting km_summary object contains various components, including the survival probabilities stored in the surv component. By assigning km_summary$surv to the variable surv_prob, you extract the survival probabilities as a vector. You can use the surv_prob variable to access and analyze the survival probabilities at different time points obtained from the Kaplan-Meier analysis.
+The resulting **'km_summary'** object contains various components, including the survival probabilities stored in the surv component. By assigning km_summary$surv to the variable surv_prob, you extract the survival probabilities as a vector. You can use the surv_prob variable to access and analyze the survival probabilities at different time points obtained from the Kaplan-Meier analysis.
 
 ### 3. "survdiff" 
 Compares the survival curves of 2 groups using the log rank test. It calculates the test statistic and p-value for comparing survival curves. For example, the survival curves of two groups based on gender are compared: 
