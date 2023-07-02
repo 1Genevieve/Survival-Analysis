@@ -9,7 +9,7 @@ Fits a simple survival model. This is the function used to create survival curve
 For example:
 
 
-```R
+```
 km_fit <- survfit(Surv(fu_time, death) ~ 1)
 ```
 
