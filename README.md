@@ -31,7 +31,20 @@ km_summary <- summary(km_fit)
 surv_prob <- km_summary$surv
 ```
 
-The resulting **'km_summary'** object contains various components, including the survival probabilities stored in the surv component. By assigning km_summary$surv to the variable surv_prob, you extract the survival probabilities as a vector. You can use the surv_prob variable to access and analyze the survival probabilities at different time points obtained from the Kaplan-Meier analysis.
+**'km_fit'** is the survfit object obtained from the Kaplan-Meier analysis. The resulting **'km_summary'** object contains various components or summary statistics, including the survival probabilities stored in the surv component. By assigning **'km_summary$surv'** to the variable **'surv_prob'**, you extract the survival probabilities as a vector. You can use the surv_prob variable to access and analyze the survival probabilities at different time points obtained from the Kaplan-Meier analysis.
+
+A further example:
+
+```
+summary(km_fit, times = c(1:7,30,60,90*(1:10))) 
+```
+
+The summary function is applied to the object, **'km_fit'** to calculate summary statistics, including the survival probabilities at different time points. The summary function, when applied to a survfit object, provides several summary statistics related to survival analysis. By specifying the times argument, you can request summary statistics at specific time points. In this case, the code requests summary statistics at time points 1, 2, 3, 4, 5, 6, 7, 30, 60, 90, 180, 270, 360, 450, 540, 630, 720, 810, 900.
+
+![summary](https://github.com/1Genevieve/Survival_Analysis/blob/master/summary1.JPG)
+
+The summary function is applied to this object to calculate summary statistics, including the survival probabilities at different time points.
+
 
 ### 3. "survdiff" 
 Compares the survival curves of 2 groups using the log rank test. It calculates the test statistic and p-value for comparing survival curves. For example, the survival curves of two groups based on gender are compared: 
