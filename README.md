@@ -14,6 +14,7 @@ Surv(fu_time, death): This part defines the survival object for the analysis. Th
 
 Plotting kmfit will show show the survival curve:
 
+![kmfit](https://github.com/1Genevieve/Survival_Analysis/blob/master/kmfit1.JPG)
 
 ### 2. "surv" 
 Produces the KM estimates of the probability of survival over time
