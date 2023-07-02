@@ -37,7 +37,7 @@ The resulting km_summary object contains various components, including the survi
 Compares the survival curves of 2 groups using the log rank test. It calculates the test statistic and p-value for comparing survival curves. For example, the survival curves of two groups based on gender are compared: 
 
 ```
-survdiff(Surv(fu_time, death) ~ gender, rho=0)
+survdiff(Surv(fu_time, death) ~ gender, rho=0) 
 ```
 
 ![survdiff](https://github.com/1Genevieve/Survival_Analysis/blob/master/survdiff1.JPG)
