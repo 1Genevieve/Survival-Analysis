@@ -39,12 +39,11 @@ A further example:
 summary(km_fit, times = c(1:7,30,60,90*(1:10))) 
 ```
 
-The summary function is applied to the object, **'km_fit'** to calculate summary statistics, including the survival probabilities at different time points. The summary function, when applied to a survfit object, provides several summary statistics related to survival analysis. By specifying the times argument, you can request summary statistics at specific time points. In this case, the code requests summary statistics at time points 1, 2, 3, 4, 5, 6, 7, 30, 60, 90, 180, 270, 360, 450, 540, 630, 720, 810, 900.
+The summary function is applied to the **'survfit'** object, **'km_fit'** to calculate summary statistics, including the survival probabilities at different time points. The summary function, when applied to a survfit object, provides several summary statistics related to survival analysis. By specifying the times argument, you can request summary statistics for the Kaplan-Meier survival curve represented by **'km_fit'** at specific time points. In this case, the code requests summary statistics at time points 1, 2, 3, 4, 5, 6, 7, 30, 60, 90, 180, 270, 360, 450, 540, 630, 720, 810, 900:
 
 ![summary](https://github.com/1Genevieve/Survival_Analysis/blob/master/summary1.JPG)
 
-The summary function is applied to this object to calculate summary statistics, including the survival probabilities at different time points.
-
+The specific statistics include number at risk, number of events, survival probability and confidence intervals depending on the settings and options used in the survfit object and the summary function.
 
 ### 3. "survdiff" 
 Compares the survival curves of 2 groups using the log rank test. It calculates the test statistic and p-value for comparing survival curves. For example, the survival curves of two groups based on gender are compared: 
