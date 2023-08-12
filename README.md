@@ -32,11 +32,11 @@ km_summary <- summary(km_fit)
 surv_prob <- km_summary$surv
 ```
 
-The **'summary'** function is applied to the **'survfit'** object, **'km_fit'** to calculate summary statistics, including the survival probabilities at different time points. The **'summary'** function, when applied to a **'survfit object'**, provides several summary statistics related to survival analysis. The resulting **'km_summary'** object contains various components or summary statistics, including survival probabilities. By assigning **'km_summary$surv'** to the object **'surv_prob'**, you extract the survival probabilities as a vector:
+The **'summary'** function is applied to the **'survfit'** object, **'km_fit'** to calculate summary statistics, including the survival probabilities at different time points. These are stored in **'km_summary'**. By assigning **'km_summary$surv'** to the object **'surv_prob'**, you extract the survival probabilities as a vector:
 
 ![survprob](https://github.com/1Genevieve/Survival_Analysis/blob/master/survprob.JPG)
 
-You can use the **'surv_prob'** object to access and analyze the survival probabilities at different time points obtained from the KM analysis.
+You can use the **'surv_prob'** object to access and analyze the survival probabilities at different time points obtained from the KM analysis. The specific statistics include number at risk, number of events, survival probability and confidence intervals depending on the settings and options used in the survfit object and the summary function.
 
 A further example:
 
@@ -48,10 +48,8 @@ By specifying the times argument, you can request summary statistics for the KM 
 
 ![summary](https://github.com/1Genevieve/Survival_Analysis/blob/master/summary1.JPG)
 
-The specific statistics include number at risk, number of events, survival probability and confidence intervals depending on the settings and options used in the survfit object and the summary function.
-
 ### 3. "survdiff" 
-Compares the survival curves of 2 groups using the log rank test. It calculates the test statistic and p-value for comparing survival curves. For example, the survival curves of two groups based on gender are compared: 
+**'survdiff'** compares the survival curves of 2 groups using the log rank test. It calculates the test statistic and p-value for comparing survival curves. For example, the survival curves of two groups based on gender are compared: 
 
 ```
 survdiff(Surv(fu_time, death) ~ gender, rho=0) 
