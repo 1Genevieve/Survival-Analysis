@@ -19,7 +19,7 @@ Plotting km_fit will show show the survival curve:
 
 ![kmfit](https://github.com/1Genevieve/Survival_Analysis/blob/master/kmfit2.JPG)
 
-**'km_fit'** also contains the survival probabilities at different time points, and other relevant information such as the number at risk and the number of events at each time point. km-fit can be used to plot the survival curve or perform further analyses on the survival data. 
+**'km_fit'** is the survfit object obtained from the Kaplan-Meier analysis. **'km_fit'** also contains the survival probabilities at different time points, and other relevant information such as the number at risk and the number of events at each time point. km-fit can be used to plot the survival curve or perform further analyses on the survival data. 
 
 ### 2. "surv" 
 Produces the KM estimates of the probability of survival over time
@@ -31,7 +31,7 @@ km_summary <- summary(km_fit)
 surv_prob <- km_summary$surv
 ```
 
-**'km_fit'** is the survfit object obtained from the Kaplan-Meier analysis. The resulting **'km_summary'** object contains various components or summary statistics, including the survival probabilities stored in the surv component. By assigning **'km_summary$surv'** to the variable **'surv_prob'**, you extract the survival probabilities as a vector. You can use the surv_prob variable to access and analyze the survival probabilities at different time points obtained from the Kaplan-Meier analysis.
+The resulting **'km_summary'** object contains various components or summary statistics, including the survival probabilities stored in the surv component. By assigning **'km_summary$surv'** to the variable **'surv_prob'**, you extract the survival probabilities as a vector. You can use the surv_prob variable to access and analyze the survival probabilities at different time points obtained from the Kaplan-Meier analysis.
 
 A further example:
 
