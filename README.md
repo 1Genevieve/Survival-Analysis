@@ -57,7 +57,7 @@ survdiff(Surv(fu_time, death) ~ gender, rho=0)
 
 ![survdiff](https://github.com/1Genevieve/Survival_Analysis/blob/master/survdiff1.JPG)
 
-THe chi-squared test statistic measures the discrepancy between the observed data and the expected data under the null hypothesis. In the context of survival analysis, the chi-squared statistic compares the observed survival data among different groups. It provides a measure of the discrepancy between the observed survival data and the expected survival data under the null hypothesis
+THe chi-squared test statistic measures the discrepancy between the observed data and the expected data under the null hypothesis. In the context of survival analysis, the chi-squared statistic compares the observed survival data among different groups. It provides a measure of the discrepancy between the observed survival data and the expected survival data under the null hypothesis.
 
 **Null hypothesis** - the chi-squared test starts with a null hypothesis, which assumes that there is no difference between the groups being compared. In the case of survdiff, it assumes that the survival curves of the groups are identical.
 
