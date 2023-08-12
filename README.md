@@ -8,18 +8,17 @@ Fits a simple survival model. This is the function used to create survival curve
 
 For example:
 
-
 ```
 km_fit <- survfit(Surv(fu_time, death) ~ 1)
 ```
 
 **'Surv(fu_time, death)'** defines the survival object for the analysis. The **'Surv'** function is used to specify the time-to-event data, where fu_time represents the follow-up time and death represents the event indicator (1 if an event occurred, 0 if censored). ~ 1 is the formula specification for the survival analysis. Tilde (~) separates the response variable **'(Surv(fu_time, death))'** from the explanatory variable. In this case, 1 indicates that there are no explanatory variables, meaning we are interested in estimating the overall survival curve without considering any specific grouping factors.
 
-Plotting km_fit will show show the survival curve:
+**'km_fit'** is the survfit object obtained from the Kaplan-Meier analysis. Plotting km_fit will show show the survival curve:
 
 ![kmfit](https://github.com/1Genevieve/Survival_Analysis/blob/master/kmfit2.JPG)
 
-**'km_fit'** is the survfit object obtained from the Kaplan-Meier analysis. **'km_fit'** also contains the survival probabilities at different time points, and other relevant information such as the number at risk and the number of events at each time point. km-fit can be used to plot the survival curve or perform further analyses on the survival data. 
+**'km_fit'** also contains the survival probabilities at different time points, and other relevant information such as the number at risk and the number of events at each time point. **'km-fit'** can be used to plot the survival curve or perform further analyses on the survival data. 
 
 ### 2. "surv" 
 Produces the KM estimates of the probability of survival over time
