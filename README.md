@@ -32,7 +32,11 @@ km_summary <- summary(km_fit)
 surv_prob <- km_summary$surv
 ```
 
-The resulting **'km_summary'** object contains various components or summary statistics, including the survival probabilities stored in the surv component. By assigning **'km_summary$surv'** to the variable **'surv_prob'**, you extract the survival probabilities as a vector. You can use the surv_prob variable to access and analyze the survival probabilities at different time points obtained from the Kaplan-Meier analysis.
+The resulting **'km_summary'** object contains various components or summary statistics, including the survival probabilities stored in the surv component. By assigning **'km_summary$surv'** to the variable **'surv_prob'**, you extract the survival probabilities as a vector:
+
+![survprob](https://github.com/1Genevieve/Survival_Analysis/blob/master/survprob.JPG)
+
+You can use the surv_prob variable to access and analyze the survival probabilities at different time points obtained from the Kaplan-Meier analysis.
 
 A further example:
 
