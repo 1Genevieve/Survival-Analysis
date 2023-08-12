@@ -16,6 +16,10 @@ km_fit <- survfit(Surv(fu_time, death) ~ 1)
 
 **'km_fit'** is the survfit object obtained from the Kaplan-Meier analysis. Plotting km_fit will show show the survival curve:
 
+```
+plot(km_fit)
+```
+
 ![kmfit](https://github.com/1Genevieve/Survival_Analysis/blob/master/kmfit2.JPG)
 
 **'km_fit'** also contains the survival probabilities at different time points, and other relevant information such as the number at risk and the number of events at each time point. **'km-fit'** can be used to plot the survival curve or perform further analyses on the survival data. 
