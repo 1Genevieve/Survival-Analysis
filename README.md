@@ -34,6 +34,8 @@ surv_prob <- km_summary$surv
 
 The **'summary'** function is applied to the **'survfit'** object, **'km_fit'** to calculate summary statistics, including the survival probabilities at different time points. These are stored in **'km_summary'**. You can use the **'km_summary'** object to access and analyze the survival probabilities at different time points obtained from the KM analysis. The specific statistics include number at risk, number of events, survival probability and confidence intervals depending on the settings and options used in the survfit object and the summary function:
 
+![kmsummary](https://github.com/1Genevieve/Survival_Analysis/blob/master/kmsummary.JPG)
+
 By assigning **'km_summary$surv'** to the object **'surv_prob'**, you extract the survival probabilities as a vector:
 
 ![survprob](https://github.com/1Genevieve/Survival_Analysis/blob/master/survprob.JPG)
