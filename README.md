@@ -10,7 +10,6 @@ install.packages("ggplot")
 library(survival)
 library(ggplot2)
 ```
-
 ### Functions:
 
 ### 1. "survfit"
@@ -49,8 +48,6 @@ The **'summary'** function is applied to the **'survfit'** object, **'km_fit'** 
 By assigning **'km_summary$surv'** to the object **'surv_prob'**, you extract the survival probabilities as a vector:
 
 ![survprob](https://github.com/1Genevieve/Survival_Analysis/blob/master/survprob.JPG)
-
-
 
 A further example:
 
@@ -103,7 +100,7 @@ plot(km_gender_fit)
 install.packages("survminer")
 library(survminer)
 ```
-
+### Function: "Coxph"
 ```
 cox <- coxph(Surv(fu_time, death) ~ ethgrp, data = g)
 summary (cox)
