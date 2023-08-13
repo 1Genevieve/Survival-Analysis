@@ -107,3 +107,6 @@ summary (cox)
 ```
 
 ![coxph_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/coxph_age.JPG)
+
+
+![coxph_ethgrp](https://github.com/1Genevieve/Survival_Analysis/blob/master/coxph.JPG)
