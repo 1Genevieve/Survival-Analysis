@@ -103,3 +103,8 @@ plot(km_gender_fit)
 install.packages("survminer")
 library(survminer)
 ```
+
+```
+cox <- coxph(Surv(fu_time, death) ~ ethgrp, data = g)
+summary (cox)
+```
