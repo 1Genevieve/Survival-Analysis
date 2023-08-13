@@ -62,7 +62,7 @@ By specifying the times argument, you can request summary statistics for the KM 
 ![summary](https://github.com/1Genevieve/Survival_Analysis/blob/master/summary1.JPG)
 
 ## Log-Rank Test
-Compared to the KM anaylysis, the log-rank test determines whether there is a signigicant difference in the survival curves or survival probabilities of groups. It is a non-parametric test.
+Compared to the KM anaylysis, the log-rank test determines whether there is a significant difference in the survival curves or survival probabilities of groups. It is a non-parametric test.
 
 ### 3. "survdiff" 
 **'survdiff'** compares the survival curves of 2 groups using the log rank test. It calculates the test statistic and p-value for comparing survival curves. For example, the survival curves of two groups based on gender are compared: 
@@ -93,3 +93,5 @@ plot(km_gender_fit)
 ```
 
 ![km_gender](https://github.com/1Genevieve/Survival_Analysis/blob/master/kmfit_gender.JPG)
+
+## Cox-Proportional Hazards Model
