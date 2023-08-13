@@ -60,6 +60,8 @@ By specifying the times argument, you can request summary statistics for the KM 
 
 ![summary](https://github.com/1Genevieve/Survival_Analysis/blob/master/summary1.JPG)
 
+## Log-Rank Test
+
 ### 3. "survdiff" 
 **'survdiff'** compares the survival curves of 2 groups using the log rank test. It calculates the test statistic and p-value for comparing survival curves. For example, the survival curves of two groups based on gender are compared: 
 
