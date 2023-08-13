@@ -106,7 +106,8 @@ cox <- coxph(Surv(fu_time, death) ~ ethgrp, data = g)
 summary (cox)
 ```
 
+Example 1: continuous predictor
 ![coxph_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/coxph_age.JPG)
 
-
+Example 2: categorical predictor
 ![coxph_ethgrp](https://github.com/1Genevieve/Survival_Analysis/blob/master/coxph.JPG)
