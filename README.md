@@ -109,4 +109,4 @@ cox <- coxph(Surv(fu_time, death) ~ ethgrp, data = g)
 summary (cox)
 ```
 
-![coxph](https://github.com/1Genevieve/Survival_Analysis/blob/master/coxph.JPG)
+![coxph_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/coxph_age.JPG)
