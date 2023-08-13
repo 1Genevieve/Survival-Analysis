@@ -1,12 +1,13 @@
-# Survival Analysis in R
-## Key packages and functions
-### Package: Survival
+# Survival Analysis in R: Key Packages, Functions and Analyses
+## Package: Survival
 ```
 install.packages("survival")
 install.packages("ggplot")
 library(survival)
 library(ggplot2)
 ```
+
+## Kaplan-Meier Analysis
 
 ### Functions:
 
