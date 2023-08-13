@@ -95,6 +95,7 @@ plot(km_gender_fit)
 ![km_gender](https://github.com/1Genevieve/Survival_Analysis/blob/master/kmfit_gender.JPG)
 
 ## Cox-Proportional Hazards Model
+## Package: Survminer
 ```
 install.packages("survminer")
 library(survminer)
