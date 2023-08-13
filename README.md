@@ -65,8 +65,7 @@ By specifying the times argument, you can request summary statistics for the KM 
 ## Log-Rank Test
 Compared to the KM anaylysis, the log-rank test determines whether there is a significant difference in the survival curves or survival probabilities of groups. It is a non-parametric test.
 
-### Function:
-### "Survdiff" 
+### Function: "Survdiff" 
 **'survdiff'** compares the survival curves of 2 groups using the log rank test. It calculates the test statistic and p-value for comparing survival curves. For example, the survival curves of two groups based on gender are compared: 
 
 ```
