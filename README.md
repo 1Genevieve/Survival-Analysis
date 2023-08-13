@@ -1,6 +1,13 @@
 # Survival Analysis in R
 ## Key packages and functions
 ### Package: Survival
+```
+install.packages("survival")
+install.packages("ggplot")
+library(survival)
+library(ggplot2)
+```
+
 ### Functions:
 
 ### 1. "survfit"
