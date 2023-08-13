@@ -1,14 +1,15 @@
-# Survival Analysis in R: Key Packages, Functions and Analyses
-## Package: Survival
+# Survival Analysis in R: Analyses Packages and Functions
+
+## Kaplan-Meier Analysis
+The KM analysis is the most basic of the analyses -- it estimates survival probabilities and generates a KM curve. To be useful, you must use the survival probabilities to compare survival between groups, visualize survival curves, and identify potential differences in survival patterns.
+
+### Package: Survival
 ```
 install.packages("survival")
 install.packages("ggplot")
 library(survival)
 library(ggplot2)
 ```
-
-## Kaplan-Meier Analysis
-The KM analysis is the most basic of the analyses -- it estimates survival probabilities and generates a KM curve. To be useful, you must use the survival probabilities to compare survival between groups, visualize survival curves, and identify potential differences in survival patterns.
 
 ### Functions:
 
@@ -95,7 +96,9 @@ plot(km_gender_fit)
 ![km_gender](https://github.com/1Genevieve/Survival_Analysis/blob/master/kmfit_gender.JPG)
 
 ## Cox-Proportional Hazards Model
-## Package: Survminer
+
+
+### Package: Survminer
 ```
 install.packages("survminer")
 library(survminer)
