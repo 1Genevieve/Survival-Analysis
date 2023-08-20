@@ -100,6 +100,8 @@ plot(km_gender_fit)
 install.packages("survminer")
 library(survminer)
 ```
+**Survminer** is a powerful package for visualizing and interpreting survival analysis results. It complements the "survival" package and provides a range of functions to create informative and aesthetically pleasing survival plots and summary tables. It's particularly useful for communicating complex survival analysis results to both technical and non-technical audiences.
+
 ### Function: "Coxph"
 ```
 cox <- coxph(Surv(fu_time, death) ~ ethgrp, data = g)
