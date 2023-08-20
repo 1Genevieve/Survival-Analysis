@@ -121,6 +121,10 @@ Both **coef** and **exp(coef)** are valuable for interpreting the impact of pred
 
 **se(coef)** - standard error of the coefficient estimate. It represents the standard deviation of the sampling distribution of the coefficient estimate. It is a measure of the uncertainty associated with the coefficient estimate. Smaller standard errors indicate more precise estimates, while larger standard errors indicate more uncertainty.
 
+**z** - a measure of how many standard deviations the coefficient estimate is away from zero. Positive z-scores indicate that the coefficient is larger than expected by chance, while negative z-scores indicate that the coefficient is smaller than expected by chance.
+
+**Pr(>|z|)** - the p-value associated with the z-score. The p-value measures the probability of obtaining a z-score as extreme as the observed one, assuming that the null hypothesis is true (i.e., the coefficient is zero or has no effect). A small p-value (typically less than a chosen significance level, often 0.05) suggests that the coefficient is statistically significant, indicating that it's unlikely to have occurred by chance alone. A large p-value suggests that the coefficient is not statistically significant, meaning that it could plausibly have arisen due to random variation.
+
 **Example 2: categorical predictor**
 ```
 cox <- coxph(Surv(fu_time, death) ~ ethgrp, data = g)
