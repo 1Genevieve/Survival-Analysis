@@ -100,18 +100,24 @@ plot(km_gender_fit)
 install.packages("survminer")
 library(survminer)
 ```
-**Survminer** is a powerful package for visualizing and interpreting survival analysis results. It complements the "survival" package and provides a range of functions to create informative and aesthetically pleasing survival plots and summary tables. It's particularly useful for communicating complex survival analysis results to both technical and non-technical audiences.
+**'Survminer'** is a powerful package for visualizing and interpreting survival analysis results. It complements the **'Survival'** package and provides a range of functions to create informative and aesthetically pleasing survival plots and summary tables. It's particularly useful for communicating complex survival analysis results to both technical and non-technical audiences.
 
 ### Function: "Coxph"
+
+**Example 1: continuous predictor**
+```
+cox <- coxph(Surv(fu_time, death)~age, data = g)
+summary (cox)
+```
+![coxph_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/coxph_age.JPG)
+
+**data=g** - takes variables straight from dataset **g**
+**coef** - estimated log hazard ratio. Quantifies the logarithm of the hazard ration with age as predictor variable.
+**exp(coef)** - hazard ratio
+
+**Example 2: categorical predictor**
 ```
 cox <- coxph(Surv(fu_time, death) ~ ethgrp, data = g)
 summary (cox)
 ```
-
-**Example 1: continuous predictor**
-
-![coxph_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/coxph_age.JPG)
-
-**Example 2: categorical predictor**
-
 ![coxph_ethgrp](https://github.com/1Genevieve/Survival_Analysis/blob/master/coxph.JPG)
