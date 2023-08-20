@@ -112,8 +112,14 @@ summary (cox)
 ![coxph_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/coxph_age.JPG)
 
 **data=g** - takes variables straight from dataset **g**
-**coef** - estimated log hazard ratio. Quantifies the logarithm of the hazard ration with age as predictor variable.
-**exp(coef)** - hazard ratio
+
+**coef** - estimated log hazard ratio. Quantifies the logarithm of the hazard ratio with age as predictor variable.
+
+**exp(coef)** - exponential of the coefficient. The hazard ratio itself or relative risk. Taking the exponential of the coefficient (i.e., exp(coef)) gives the hazard ratio associated with a one-unit increase in age. If exp(coef) > 1, a one-unit increase in the predictor variable leads to an increased hazard (higher risk). If exp(coef) < 1, a one-unit increase in the predictor variable leads to a decreased hazard (lower risk). Thus, every year increase in age increases the hazard ratio by 0.06. The increase is linear meaning older people have the same risk of death of 0.06 as younger people (which is not correct, but I will tackle that later). 
+
+Both **coef** and **exp(coef)** are valuable for interpreting the impact of predictor variables on survival outcomes in a Cox regression model. **exp(coef)** provides a more intuitive interpretation in terms of risk change, while **coef** is important for understanding the magnitude of the effect on the log hazard ratio.
+
+**se(coef)** - standard error of the coefficient estimate. It represents the standard deviation of the sampling distribution of the coefficient estimate. It is a measure of the uncertainty associated with the coefficient estimate. Smaller standard errors indicate more precise estimates, while larger standard errors indicate more uncertainty.
 
 **Example 2: categorical predictor**
 ```
