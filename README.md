@@ -115,7 +115,7 @@ summary (cox)
 
 **coef** - estimated log hazard ratio. Quantifies the logarithm of the hazard ratio with age as predictor variable.
 
-**exp(coef)** - exponential of the coefficient. The hazard ratio itself or relative risk. Taking the exponential of the coefficient (i.e., exp(coef)) gives the hazard ratio associated with a one-unit increase in age. If exp(coef) > 1, a one-unit increase in the predictor variable leads to an increased hazard (higher risk). If exp(coef) < 1, a one-unit increase in the predictor variable leads to a decreased hazard (lower risk). Thus, every year increase in age increases the hazard ratio by 0.06. The increase is linear meaning older people have the same risk of death of 0.06 as younger people (which is not correct, but I will tackle that later). 
+**exp(coef)** - exponential of the coefficient. The hazard ratio itself or relative risk. Taking the exponential of the coefficient (i.e., exp(coef)) gives the hazard ratio associated with a one-unit increase in age. If exp(coef) > 1, a one-unit increase in age leads to an increased hazard (higher risk). If exp(coef) < 1, a one-unit increase in age leads to a decreased hazard (lower risk). Thus, every year increase in age increases the hazard ratio by 0.06. The increase is linear meaning older people have the same risk of death of 0.06 as younger people (which is not correct, but I will tackle that later). 
 
 Both **coef** and **exp(coef)** are valuable for interpreting the impact of predictor variables on survival outcomes in a Cox regression model. **exp(coef)** provides a more intuitive interpretation in terms of risk change, while **coef** is important for understanding the magnitude of the effect on the log hazard ratio.
 
