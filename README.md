@@ -129,6 +129,8 @@ Both **coef** and **exp(coef)** are valuable for interpreting the impact of pred
 
 **exp(coef±1.96 X se(coef))** - confidence interval of the hazard ratio. It provides a range within which the true hazard ratio is likely to lie.
 
+**Concordance** -  the concordance index is a measure of the discriminatory power of a survival model. It assesses the ability of the model to correctly order pairs of subjects with different survival times. It measures how well the model can distinguish between subjects who experienced an event at different times. The concordance index ranges from 0 to 1. A value of 0.5 indicates random predictions (similar to flipping a coin), while a value of 1 indicates perfect predictions (the model correctly ranks all pairs of subjects).
+
 **Example 2: categorical predictor**
 ```
 cox <- coxph(Surv(fu_time, death) ~ ethgrp, data = g)
