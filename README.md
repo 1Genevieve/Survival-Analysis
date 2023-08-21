@@ -121,6 +121,8 @@ summary (cox)
 
 Both **coef** and **exp(coef)** are valuable for interpreting the impact of predictor variables on survival outcomes in a Cox regression model. **exp(coef)** provides a more intuitive interpretation in terms of risk change, while **coef** is important for understanding the magnitude of the effect on the log hazard ratio.
 
+**exp(-coef)** - how the hazard changes when the predictor variable decreases by one unit.
+
 **se(coef)** - standard error of the coefficient estimate. It represents the standard deviation of the sampling distribution of the coefficient estimate. It is a measure of the uncertainty associated with the coefficient estimate. Smaller standard errors indicate more precise estimates, while larger standard errors indicate more uncertainty.
 
 **z** - a measure of how many standard deviations the coefficient estimate is away from zero. Positive z-scores indicate that the coefficient is larger than expected by chance, while negative z-scores indicate that the coefficient is smaller than expected by chance.
