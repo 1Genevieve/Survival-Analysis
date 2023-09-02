@@ -139,3 +139,9 @@ cox <- coxph(Surv(fu_time, death) ~ ethgrp, data = g)
 summary (cox)
 ```
 ![coxph_ethgrp](https://github.com/1Genevieve/Survival_Analysis/blob/master/coxph.JPG)
+
+**Example 3: multiple predictors**
+```
+mcox <- coxph(Surv(fu_time, death) ~ age + gender + copd + prior_dnas + ethgrp)
+summary (mcox)
+```
