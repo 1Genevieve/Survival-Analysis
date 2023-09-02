@@ -145,3 +145,4 @@ summary (cox)
 mcox <- coxph(Surv(fu_time, death) ~ age + gender + copd + prior_dnas + ethgrp)
 summary (mcox)
 ```
+![mcox](https://github.com/1Genevieve/Survival_Analysis/blob/master/mcox.JPG)
