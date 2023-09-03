@@ -119,7 +119,7 @@ summary (cox)
 
 ```
 ap <- cox.zph(cox)
-ap
+print(ap)
 plot(ap)
 ```
 ![residuals_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/res_age.JPG)
