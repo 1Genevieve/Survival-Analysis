@@ -115,7 +115,13 @@ summary (cox)
 
 **coef** - estimated log hazard ratio. Quantifies the logarithm of the hazard ratio with age as predictor variable.
 
-**exp(coef)** - exponential of the coefficient. The hazard ratio itself or relative risk. Taking the exponential of the coefficient (i.e., exp(coef)) gives the hazard ratio associated with a one-unit increase in age. If exp(coef) > 1, a one-unit increase in age leads to an increased hazard (higher risk). If exp(coef) < 1, a one-unit increase in age leads to a decreased hazard (lower risk). Thus, every year increase in age increases the hazard in the older group by 6%. The increase is linear meaning older people have the same 6% increase in risk of death as younger people every year (that is not correct, but I will tackle that later). 
+**exp(coef)** - exponential of the coefficient. The hazard ratio itself or relative risk. Taking the exponential of the coefficient (i.e., exp(coef)) gives the hazard ratio associated with a one-unit increase in age. If exp(coef) > 1, a one-unit increase in age leads to an increased hazard (higher risk). If exp(coef) < 1, a one-unit increase in age leads to a decreased hazard (lower risk). Thus, every year increase in age increases the hazard in the older group by 6%. The increase is linear meaning older people have the same 6% increase in risk of death as younger people every year (that is not correct as show in the test of proportional hazards assumption below).
+
+```
+ap <- cox.zph(cox)
+ap
+plot(ap)
+```
 
 **Hazard ratio** - represents the ratio of the hazard rates between two groups (usually defined by a binary variable or a unit change in a continuous variable). A hazard ratio greater than 1 suggests an increased hazard rate in the compared group, a hazard ratio less than 1 suggests a decreased hazard rate, and a hazard ratio of 1 suggests no difference in hazard rates. When interpreting the Cox proportional hazards model, a hazard ratio (exp(coef)) significantly different from 1 (often assessed by the associated p-value), indicates that the variable has a significant effect on the hazard of an event occurring. For example, an HR of 2 would suggest that the event is occurring approximately twice as fast in one group compared to the other.
 
