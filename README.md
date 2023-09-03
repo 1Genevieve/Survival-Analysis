@@ -150,7 +150,7 @@ summary (mcox)
 
 ## Tests of the Proportional Hazard Assumption
 
-**Martingale test of proportional hazards assumption for Example 1:
+Martingale test of proportional hazards assumption for Example 1:
 ```
 ap <- cox.zph(cox)
 print(ap)
