@@ -148,9 +148,9 @@ summary (mcox)
 ![mcox](https://github.com/1Genevieve/Survival_Analysis/blob/master/mcox.JPG)
 
 
-## Tests of the Proportional Hazard Assumption
+## Tests of the Proportional Hazards Assumption
 
-Martingale test of proportional hazards assumption for Example 1:
+Martingale test Example 1:
 ```
 ap <- cox.zph(cox)
 print(ap)
