@@ -115,14 +115,7 @@ summary (cox)
 
 **coef** - estimated log hazard ratio. Quantifies the logarithm of the hazard ratio with age as predictor variable.
 
-**exp(coef)** - exponential of the coefficient. The hazard ratio itself or relative risk. Taking the exponential of the coefficient (i.e., exp(coef)) gives the hazard ratio associated with a one-unit increase in age. If exp(coef) > 1, a one-unit increase in age leads to an increased hazard (higher risk). If exp(coef) < 1, a one-unit increase in age leads to a decreased hazard (lower risk). Thus, every year increase in age increases the hazard in the older group by 6%. The increase is linear meaning older people have the same 6% increase in risk of death as younger people every year (that is not correct as shown in the Martingale test of proportional hazards assumption below).
-
-```
-ap <- cox.zph(cox)
-print(ap)
-plot(ap)
-```
-![residuals_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/res_age.JPG)
+**exp(coef)** - exponential of the coefficient. The hazard ratio itself or relative risk. Taking the exponential of the coefficient (i.e., exp(coef)) gives the hazard ratio associated with a one-unit increase in age. If exp(coef) > 1, a one-unit increase in age leads to an increased hazard (higher risk). If exp(coef) < 1, a one-unit increase in age leads to a decreased hazard (lower risk). Thus, every year increase in age increases the hazard in the older group by 6%. The increase is linear meaning older people have the same 6% increase in risk of death as younger people every year.
 
 **Hazard ratio** - ratio of hazard rates between two groups (usually defined by a binary variable or a unit change in a continuous variable). HR>1 suggests an increased hazard rate in the compared group, HR<1 suggests a decreased hazard rate, and HR=1 suggests no difference in hazard rates. A HR (exp(coef)) significantly different from 1 (often assessed by the associated p-value) indicates that the variable has a significant effect on the hazard of an event occurring. For example, an HR of 2 suggests that the event is occurring approximately twice as fast in one group compared to the other.
 
@@ -153,3 +146,15 @@ mcox <- coxph(Surv(fu_time, death) ~ age + gender + copd + prior_dnas + ethgrp)
 summary (mcox)
 ```
 ![mcox](https://github.com/1Genevieve/Survival_Analysis/blob/master/mcox.JPG)
+
+
+## Tests of the Proportional Hazard Assumption
+
+**Martingale test of proportional hazards assumption for Example 1:
+```
+ap <- cox.zph(cox)
+print(ap)
+plot(ap)
+```
+![residuals_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/res_age.JPG)
+
