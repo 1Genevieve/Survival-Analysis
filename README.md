@@ -124,7 +124,7 @@ plot(ap)
 ```
 ![residuals_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/res_age.JPG)
 
-**Hazard ratio** - ratio of hazard rates between two groups (usually defined by a binary variable or a unit change in a continuous variable). HR>1 suggests an increased hazard rate in the compared group, HR<1 suggests a decreased hazard rate, and HR=1 suggests no difference in hazard rates. When interpreting the Cox proportional hazards model, a hazard ratio (exp(coef)) significantly different from 1 (often assessed by the associated p-value), indicates that the variable has a significant effect on the hazard of an event occurring. For example, an HR of 2 would suggest that the event is occurring approximately twice as fast in one group compared to the other.
+**Hazard ratio** - ratio of hazard rates between two groups (usually defined by a binary variable or a unit change in a continuous variable). HR>1 suggests an increased hazard rate in the compared group, HR<1 suggests a decreased hazard rate, and HR=1 suggests no difference in hazard rates. A HR (exp(coef)) significantly different from 1 (often assessed by the associated p-value) indicates that the variable has a significant effect on the hazard of an event occurring. For example, an HR of 2 suggests that the event is occurring approximately twice as fast in one group compared to the other.
 
 Both **coef** and **exp(coef)** are valuable for interpreting the impact of predictor variables on survival outcomes in a Cox regression model. **exp(coef)** provides a more intuitive interpretation in terms of risk change, while **coef** is important for understanding the magnitude of the effect on the log hazard ratio.
 
