@@ -115,7 +115,7 @@ summary (cox)
 
 **coef** - estimated log hazard ratio. Quantifies the logarithm of the hazard ratio with age as predictor variable.
 
-**exp(coef)** - exponential of the coefficient. The hazard ratio itself or relative risk. Taking the exponential of the coefficient (i.e., exp(coef)) gives the hazard ratio associated with a one-unit increase in age. If exp(coef) > 1, a one-unit increase in age leads to an increased hazard (higher risk). If exp(coef) < 1, a one-unit increase in age leads to a decreased hazard (lower risk). Thus, every year increase in age increases the hazard in the older group by 6%. The increase is linear meaning older people have the same 6% increase in risk of death as younger people every year (that is not correct as shown in the test of proportional hazards assumption below).
+**exp(coef)** - exponential of the coefficient. The hazard ratio itself or relative risk. Taking the exponential of the coefficient (i.e., exp(coef)) gives the hazard ratio associated with a one-unit increase in age. If exp(coef) > 1, a one-unit increase in age leads to an increased hazard (higher risk). If exp(coef) < 1, a one-unit increase in age leads to a decreased hazard (lower risk). Thus, every year increase in age increases the hazard in the older group by 6%. The increase is linear meaning older people have the same 6% increase in risk of death as younger people every year (that is not correct as shown in the Martingale test of proportional hazards assumption below).
 
 ```
 ap <- cox.zph(cox)
