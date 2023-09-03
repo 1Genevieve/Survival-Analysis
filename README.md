@@ -122,6 +122,7 @@ ap <- cox.zph(cox)
 ap
 plot(ap)
 ```
+![residuals_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/res_age.JPG)
 
 **Hazard ratio** - represents the ratio of the hazard rates between two groups (usually defined by a binary variable or a unit change in a continuous variable). A hazard ratio greater than 1 suggests an increased hazard rate in the compared group, a hazard ratio less than 1 suggests a decreased hazard rate, and a hazard ratio of 1 suggests no difference in hazard rates. When interpreting the Cox proportional hazards model, a hazard ratio (exp(coef)) significantly different from 1 (often assessed by the associated p-value), indicates that the variable has a significant effect on the hazard of an event occurring. For example, an HR of 2 would suggest that the event is occurring approximately twice as fast in one group compared to the other.
 
