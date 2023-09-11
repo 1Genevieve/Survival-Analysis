@@ -1,4 +1,4 @@
-# Survival Analysis in R: Analyses, Packages and Functions
+# Survival Analysis in R: Analyses, Packages and Functions (from Coursera)
 
 ## Kaplan-Meier Analysis
 The KM analysis is the most basic of the analyses -- it estimates survival probabilities and generates a KM curve. To be useful, you must use the survival probabilities to compare survival between groups, visualize survival curves, and identify potential differences in survival patterns.
