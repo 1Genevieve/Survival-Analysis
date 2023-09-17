@@ -160,4 +160,4 @@ plot(ap)
 
 ![residuals_age](https://github.com/1Genevieve/Survival_Analysis/blob/master/res_age.JPG)
 
-We hope to get a higher p value in this case. The p-value is >0.05, which means there is no strong evidence of a relationshhip between residuals and time. The model rightly handled the correlation between age and time so that there is nothing left of this relationship for the residuals.
+We hope to get a higher p value in this case. The p-value is >0.05, which means there is no strong evidence of a relationshhip between residuals and time. The model rightly handled the correlation between age and time so that there is nothing left of this relationship for the residuals. However, the plot shows a non-zero slope, which indicates a violation of the proportional hazards assumption in Cox regression. The relative hazard (or risk) between groups is changing over time. This violation may be addressed by revisiting the model specification, considering alternative modeling techniques, or adjusting for time-varying effects.
