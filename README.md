@@ -150,7 +150,7 @@ summary (mcox)
 
 ## Tests of the Proportional Hazards Assumption
 
-Schoenfeld test for Example 1:
+Martingale test (for continuous predictors) for Example 1:
 ```
 ap <- cox.zph(cox)
 print(ap)
